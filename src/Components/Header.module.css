@@ -1,0 +1,32 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+  /* padding: 0.5rem 0; */
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  padding: .5rem 0;
+}
+
+.login::after {
+  content: '';
+  display: inline-block;
+  height: 17px;
+  width: 14px;
+  background: url('../Assets/usuario.svg') no-repeat center center;
+  margin-left: .5rem;
+  position: relative;
+  top: 3px;
+}
