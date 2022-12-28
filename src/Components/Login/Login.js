@@ -15,13 +15,10 @@ const Login = () => {
     <section className={styles.login}>
       <div className={styles.forms}>
         <Routes>
-          <Route path="/" element={<LoginForm />}></Route>
-          <Route path="/login/create/" element={<LoginCreate />} />
-          <Route path="/login/passwordlost/" element={<LoginPasswordLost />} />
-          <Route
-            path="/login/passwordreset/"
-            element={<LoginPasswordReset />}
-          />
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/criar/" element={<LoginCreate />} />
+          <Route path="/passwordlost/" element={<LoginPasswordLost />} />
+          <Route path="/passwordreset/" element={<LoginPasswordReset />} />
         </Routes>
       </div>
     </section>
