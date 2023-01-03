@@ -1,0 +1,14 @@
+.entrar {
+  display: inline-block;
+  color: #666;
+  padding: .5rem 0;
+  line-height: 1;
+}
+
+.entrar::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  display: block;
+}

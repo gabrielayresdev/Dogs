@@ -6,6 +6,8 @@ import { UserContext } from '../../UserContext';
 import Button from '../Forms/Button';
 import Input from '../Forms/Input';
 import Error from '../Helper/Error';
+import styles from './LoginCreate.module.css';
+import { Link } from 'react-router-dom';
 
 const LoginCreate = () => {
   const usuario = useForm();
@@ -39,6 +41,9 @@ const LoginCreate = () => {
           <Button>Cadastrar</Button>
         )}
         {error && <Error error={error} />}
+        <Link to="/" className={styles.entrar}>
+          Já possui conta? Faça seu login
+        </Link>
       </form>
     </section>
   );
