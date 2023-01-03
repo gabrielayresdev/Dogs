@@ -41,8 +41,8 @@ const LoginCreate = () => {
           <Button>Cadastrar</Button>
         )}
         {error && <Error error={error} />}
-        <Link to="/" className={styles.entrar}>
-          Já possui conta? Faça seu login
+        <Link to="/login" className={styles.entrar}>
+          Já possui conta? Faça seu login +
         </Link>
       </form>
     </section>
