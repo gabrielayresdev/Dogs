@@ -108,3 +108,9 @@ export function PHOTO_DELETE(id) {
     },
   };
 }
+
+export function PAGE_PHOTO_GET(id) {
+  return {
+    url: API_URL + `/api/photo/${id}`,
+  };
+}
