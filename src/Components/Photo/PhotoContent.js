@@ -9,7 +9,6 @@ import Image from '../Helper/Image';
 const PhotoContent = ({ data, single }) => {
   const { photo, comments } = data;
   const user = React.useContext(UserContext);
-  console.log(data);
 
   return (
     <div className={`${styles.photo} ${single ? styles.single : ''}`}>

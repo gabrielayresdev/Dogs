@@ -17,7 +17,6 @@ export const UserStorage = ({ children }) => {
     const json = await response.json();
     setData(json);
     setLogin(true);
-    console.log(data);
   }
 
   async function userLogin(username, password) {
@@ -33,7 +32,6 @@ export const UserStorage = ({ children }) => {
       await getUser(token);
     } catch (err) {
       setError(err.message);
-      console.log(err.message);
       setLogin(false);
     } finally {
       setLoading(false);
@@ -60,7 +58,6 @@ export const UserStorage = ({ children }) => {
           if (!response.ok) throw new Error('Token inválido');
           await getUser(token);
         } catch (err) {
-          console.log(err);
           userLogout();
         } finally {
           setLoading(false);
