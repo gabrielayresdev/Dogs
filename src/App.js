@@ -29,8 +29,8 @@ function App() {
               }
             />
             <Route path="foto/:id" element={<Photo />} />
-            <Route path='perfil/:user' element={<UserProfile />} />
-            <Route path='*' element={<NotFound />} />
+            <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
