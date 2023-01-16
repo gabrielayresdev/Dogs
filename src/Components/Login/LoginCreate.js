@@ -8,6 +8,7 @@ import Input from '../Forms/Input';
 import Error from '../Helper/Error';
 import styles from './LoginCreate.module.css';
 import { Link } from 'react-router-dom';
+import Head from '../Helper/Head';
 
 const LoginCreate = () => {
   const usuario = useForm();
@@ -30,6 +31,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Criar conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="usuario" {...usuario} />
@@ -42,7 +44,7 @@ const LoginCreate = () => {
         )}
         {error && <Error error={error} />}
         <Link to="/login" className={styles.entrar}>
-          Já possui conta? Faça seu login +
+          Já possui conta? Faça seu login.
         </Link>
       </form>
     </section>
