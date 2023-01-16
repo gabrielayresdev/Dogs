@@ -19,13 +19,13 @@ const UserHeaderNav = () => {
   return (
     <>
       {mobile && (
-        <buttom
+        <button
           aria-label="Menu"
           className={`${styles.mobileButton} ${
             mobileMenu && styles.mobileButtonActive
           }`}
           onClick={() => setMobileMenu(!mobileMenu)}
-        ></buttom>
+        ></button>
       )}
 
       <nav
