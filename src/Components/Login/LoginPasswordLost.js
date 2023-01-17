@@ -17,7 +17,6 @@ const LoginPasswordLost = () => {
         login: login.value,
         url: window.location.href.replace('perdeu', 'resetar'),
       });
-      console.log(url);
       await request(url, options);
     }
   }

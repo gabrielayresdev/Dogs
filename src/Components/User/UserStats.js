@@ -15,7 +15,6 @@ const UserStats = () => {
       await request(url, options);
     }
     getData();
-    console.log(data);
   }, [request]);
 
   if (error) return <Error error={error} />;

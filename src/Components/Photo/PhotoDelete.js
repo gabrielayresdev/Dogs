@@ -1,6 +1,7 @@
 import React from 'react';
 import { PHOTO_DELETE } from '../../api';
 import useFetch from '../../Hooks/useFetch';
+import Error from '../Helper/Error';
 import styles from './PhotoDelete.module.css';
 
 const PhotoDelete = ({ id }) => {
@@ -26,6 +27,7 @@ const PhotoDelete = ({ id }) => {
           Deletar
         </button>
       )}
+      <Error error={error} />
     </>
   );
 };
